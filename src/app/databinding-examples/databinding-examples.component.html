@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="heading-section">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-center heading text-primary">Component creation and Data binding Examples here!</h1>
+      </div>
+    </div>
+  </div>
+
+
+<button class="btn btn-info" (click) = "addServer()"> Add Alpha Server</button>
+
+
+<ul class="list-group">
+  <li
+    class="list-group-item list-group-item-success"
+    *ngFor="let server of servers; let x = index"
+    (click) = "removeServer()" >
+    {{x + ':  ' + server.name}}
+  </li>
+</ul>
+
+<input class="form-control" type="text" [(ngModel)]="serverName1" >
+  <br>
+<button class="btn btn-primary" (click)="addnewServer()" > Add Custom Server</button>
+
+
+<ul class="list-group">
+  <li
+    *ngFor=" let xyz of servers"
+    class="list-group-item-info">
+      <span *ngIf="xyz.name === 'server-alpha'"> {{xyz.content}} </span>
+  </li>
+</ul>
+</div>

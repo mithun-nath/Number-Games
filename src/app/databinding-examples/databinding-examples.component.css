@@ -1,0 +1,10 @@
+.heading-section{
+ margin: auto;
+ padding-top: 10px;
+}
+
+.heading{
+  font-family: "American Typewriter", sans-serif;
+  font-size: 30px;
+  color: darkred;
+}

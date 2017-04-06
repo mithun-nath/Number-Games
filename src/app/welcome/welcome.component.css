@@ -1,0 +1,21 @@
+.random{
+  font-family: "American Typewriter";
+  font-size: 50px;
+  color: black;
+}
+
+.game-body{
+  margin:auto;
+  padding: 100px;
+  position: relative;
+}
+
+.btn{
+  margin: 10px;
+}
+
+.welcome-button{
+  font-family: "American Typewriter";
+  font-size: 25px;
+  color: black;
+}

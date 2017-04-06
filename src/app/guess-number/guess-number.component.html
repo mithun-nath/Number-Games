@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 text-center game-body">
+      <input type="text" class="form-control" placeholder="Guess your number" [(ngModel)]="guessNumber">
+      <button class="btn btn-success btn-lg" (click)="guessCheck()">Check this</button>
+<p>{{hint}}</p>
+      <!--<p *ngIf="guessNumber === target" > {{ hint }} </p>-->
+    </div>
+    <p>{{target}}</p>
+  </div>
+</div>
