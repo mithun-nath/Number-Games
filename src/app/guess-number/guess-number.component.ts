@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class GuessNumberComponent  {
   guessSeriese = [];
-  guessNumber = 0;
+  guessNumber;
   temp = 0;
   attempt = 0;
   finished = false;
@@ -21,7 +21,8 @@ export class GuessNumberComponent  {
     this.randomInt = Math.floor(this.random);
     this.target = this.randomInt + 1;
   }
-  guessCheck() {
+  guessCheck(guessNumberInput: HTMLInputElement) {
+    this.guessNumber = guessNumberInput.value;
     this.attempt++;
     if (this.guessNumber > this.target) {
       return this.hint = 'Your number is greater than mine';
