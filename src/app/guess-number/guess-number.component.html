@@ -1,16 +1,16 @@
-<ul class="nav nav-pills" role="tablist">
+<div class="nav nav-pills" role="tablist">
 <div class="row">
     <div class="col-xs-4">
-        <li role="presentation" class="btn-danger" routerLink="/">Quit</li>
+        <button class="btn btn-lg btn-danger" routerLink="/">Quit</button>
     </div>
     <div class="col-xs-4">
         <!--<li role="presentation" class="btn-info"><a href="#">Best  <span class="badge">42</span></a></li>-->
     </div>
     <div class="col-xs-4">
-        <li role="presentation" class="btn-success"><a href="#">Attempts <span class="badge">{{attempt}}</span></a></li>
+        <button class="btn btn-lg btn-success">Attempts <span class="badge">{{attempt}}</span></button>
     </div>
 </div>
-</ul>
+</div>
 
 <div class="container">
   <div class="row">
@@ -21,7 +21,10 @@
       <input type="text" class="form-control" placeholder="Guess your number" #guessNumber>
         <!-- this input uses the local reference method to pass data to the component class-->
       <button class="btn btn-success btn-lg" (click)="guessCheck(guessNumber)">Check this</button>
-        <p>{{hint}}</p>
+
+
+        <div class="alert alert-info" role="alert">{{hint}}</div>
+
       <!--<p *ngIf="guessNumber === target" > {{ hint }} </p>-->
     </div>
     <p>{{target}}</p>

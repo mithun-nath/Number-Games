@@ -9,6 +9,7 @@ import { GuessNumberComponent } from './guess-number/guess-number.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { TestDirective } from './directives/test.directive';
 import { Routes, RouterModule } from '@angular/router';
+import { WinnerComponent } from './winner/winner.component';
 
 const gameRoutes: Routes = [
   {
@@ -27,7 +28,8 @@ const gameRoutes: Routes = [
     DatabindingExamplesComponent,
     GuessNumberComponent,
     WelcomeComponent,
-    TestDirective
+    TestDirective,
+    WinnerComponent,
   ],
   imports: [
     BrowserModule,
